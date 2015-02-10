@@ -1,0 +1,165 @@
+- var website = { name: 'Siam@Siam Design Hotel', color: '#f5822b' }
+doctype html
+html
+	head
+		meta(charset='utf-8')/
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')/
+		title Party House One — Dining in Bangkok | #{website.name}
+		meta(name='description', content='Party House One represents a whole new concept for hotel restaurant and bar; it&rsquo;s modern, fun, and full of energy. A destination in itself with its refreshing, contemporary design, one feels upbeat from the moment of entering Party House One. With friendly staff, an extensive range of international dishes prepared by professional chefs, great entertainment including energetic, live bands, the theme &lsquo;Every Minute is a Party&rsquo; rings true at Party House One. Located on G Floor, Daily open: 06.00 hrs. to midnight')/
+		meta(name='viewport', content='width=960, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')/
+
+		// Place favicon.ico and apple-touch-icon.png in the root directory
+		link(href='touch-icon-iphone.png', rel='apple-touch-icon')
+		link(href='touch-icon-ipad.png', rel='apple-touch-icon',size='76x76')
+		link(href='touch-icon-iphone-retina.png', rel='apple-touch-icon',size='120x120')
+		link(href='touch-icon-ipad-retina.png', rel='apple-touch-icon',size='152x152')
+		// build:css styles/vendor.css
+		link(href='styles/bootstrap.min.css', rel='stylesheet', type='text/css', media='screen', id='bootstrap')
+		link(href='typeface/typeface.css', rel='stylesheet', type='text/css', media='all', id='typeface')
+		link(href='styles/lavuestyl.css', rel='stylesheet', type='text/css', media='screen', id='default')
+		//- link(href='styles/skrollr.css', rel='stylesheet', type='text/css', media='screen', id='skrollr', data-skrollr-stylesheet)
+		// bower:css
+		// endbower
+		// endbuild
+		// build:css(.tmp) styles/main.css
+		// endbuild
+		script(src='scripts/modernizr.js')
+
+	body
+		#location 0
+		#header
+			.viewport
+				#branding(data-0='top: 0px;', data-200='top: -40px')
+					h1#logo
+						a(href='')
+							img(src='./images/logo@2x.png', alt=website.name)
+				#navbg				
+				nav(role='navigation')
+					ul.primary.list-inline
+						li.accommodation(page='accommodation')
+							a(href='') Accommodation
+						li.dining.current_page(page='dining')
+							a(href='') Dining
+						li.spa(page='spa')
+							a(href='') Spa
+						li.facilities(page='facilities')
+							a(href='') Facilities
+						li.special-offers(page='special-offers')
+							a(href='') Special Offers &amp; News
+						li.contact-us(page='contact-us')
+							a(href='') Contact Us
+					ul.primary-bg.list-inline
+						li.accommodation
+							img(src='images/nav-bg-active.png')
+						li.dining
+							img(src='images/nav-bg-active.png')
+						li.spa
+							img(src='images/nav-bg-active.png')
+						li.facilities
+							img(src='images/nav-bg-active.png')
+						li.special-offers
+							img(src='images/nav-bg-active.png')
+						li.contact-us
+							img(src='images/nav-bg-active.png')
+
+					ul.secondary.list-inline
+						li
+							a(href='') Downloads
+						li
+							a(href='') Gallery
+				
+
+		#container
+			#heading
+				#bg-header(data-0='top: -5px;', data-500='top: -850px;')
+				.wrapper
+					.viewport
+						h1.title(data-0='top: 270px; left: 160px', data-800='top: -200px;') LA
+							span.hl Vue
+						.hl-spade(data-0='top: 300px; right: -20px',data-800='top: -800px;')
+							span.nl GASTRONOMIC
+							span.nl EARTH CUISINE
+						img.eiffel_bread(src='images/lavue/eiffel_bread_logo.png', alt='La Vue', data-0='top: 600px; right: 450px; opacity: 1;',data-1000='top: -900px',data-2300='opacity: 1',data-2400='opacity: 0')
+						
+
+			#concept
+				#bg-bkkview(data-0='top: 400px',data-100='top: -40px',data-480='top: -250px',data-1000='top: -400px',data-2200='top: -400px', data-2300='top: -1300px; ')
+				#bg-concept(data-0='top: 140px;',data-100='top: -40px', data-480='top: -200px', data-1100='top: -970px', data-2200='top: -970px', data-2300='top: -1300px')
+			
+				.wrapper
+					.viewport			
+
+						img.lavue-logo(src='images/lavue/la-vue-text-logo.png',alt='La Vue',data-0='top: 1200px; right: 159px; opacity: 0',data-700='top: -500px; opacity: 0',data-1000='top: -60px; opacity: 1',data-2200='opacity: 1',data-2300='opacity: 0')
+						.overlay(data-1000='top: 336px; opacity: 0;', data-1100='top: 326px; opacity: 1;', data-1200='top: 326px; opacity: 1;',data-1300='top: 316px; opacity: 0;')
+							h2.content-title Gastronomic
+							p.content-tagline(style='top: 135px; left: 10px; width: 200px;') La Vue
+							p.content-description(style='top: 175px; left: 10px; width:470px') Bar Eleven is the place for a more relaxed drink. For those in a reflective mood, or a relaxed chat among good friends in a stylish and comfortable environment, BarEleven is the place to visit. It represents another element in making Siam@Siam Design Hotel &amp; Spa such a unique environment, and a hotel that offers something for everyone.
+
+						.overlay(data-1300='top: 336px; opacity: 0;', data-1400='top: 326px; opacity: 1;', data-1500='top: 326px; opacity: 1;',data-1600='top: 316px; opacity: 0;')
+							h2.content-title Concept
+							p.content-tagline(style='top: 135px; left: 10px; width: 200px;') La Vue
+							p.content-description(style='top: 175px; left: 10px; width:470px') Bar Eleven is the place for a more relaxed drink. For those in a reflective mood, or a relaxed chat among good friends in a stylish and comfortable environment, BarEleven is the place to visit. It represents another element in making Siam@Siam Design Hotel &amp; Spa such a unique environment, and a hotel that offers something for everyone.
+
+						.overlay(data-1600='top: 336px; opacity: 0;', data-1700='top: 326px; opacity: 1;', data-1800='top: 326px; opacity: 1;',data-1900='top: 316px; opacity: 0;')
+							h2.content-title Design
+							p.content-tagline(style='top: 135px; left: 10px; width: 200px;') La Vue
+							p.content-description(style='top: 175px; left: 10px; width:470px') Bar Eleven is the place for a more relaxed drink. For those in a reflective mood, or a relaxed chat among good friends in a stylish and comfortable environment, BarEleven is the place to visit. It represents another element in making Siam@Siam Design Hotel &amp; Spa such a unique environment, and a hotel that offers something for everyone.
+
+						.overlay(data-1900='top: 336px; opacity: 0;', data-2000='top: 326px; opacity: 1;', data-2100='top: 326px; opacity: 1;',data-2200='top: 316px; opacity: 0;')
+							h2.content-title Hours
+							p.content-tagline(style='top: 135px; left: 10px; width: 200px;') La Vue
+							p.content-description(style='top: 175px; left: 10px; width:470px') Bar Eleven is the place for a more relaxed drink. For those in a reflective mood, or a relaxed chat among good friends in a stylish and comfortable environment, BarEleven is the place to visit. It represents another element in making Siam@Siam Design Hotel &amp; Spa such a unique environment, and a hotel that offers something for everyone.
+
+						.navigation(data-1000='opacity: 0; top: 44%; left: 66%;', data-1100='opacity: 1;', data-2200='opacity: 1', data-2300='opacity: 0; top: 25%;')
+							ul.list-unstyled
+								li.gastronomic
+									a(href='#') Gastronomic
+								li.concept
+									a(href='#') Concept
+								li.design
+									a(href='#') Design
+								li.hours
+									a(href='#') Hours
+			#signature
+				#bg-signature(data-1000='top: 700px;', data-2200='top: 1000px;', data-2500='top: -420px;', data-2900='top: -420px;', data-3000='top: -500px',data-3500='top: -600px')
+				.wrapper
+					.viewport
+						img.signature-bg-obj(src='images/lavue/object-bg-concept.png',data-1000='top: 937px; opacity: 0;',data-2400='top: -200px; left: 910px; opacity: 0',data-2700='opacity: 1; left: 654px',data-2900='opacity: 1;', data-3100='opacity: 0;')
+						.overlay.signature(data-2600='top: 80px; opacity: 0;', data-2700='top: 70px; opacity: 1;', data-2900='top: 70px; opacity: 1;', data-3100='top: -500px; opacity: 0;')
+							h2.content-title Menu
+							//- p.content-tagline(style='top: 135px; left: 10px; width: 200px;') Bar Eleven
+							p.content-tagline(style='top: 135px; left: 10px; width: 200px;') Bar Eleven
+							p.content-description(style='top: 490px; left: 10px; width:470px', data-1970='opacity: 0', data-1990='opacity: 1') Beef Carpaccio with rocket salad  and tete de moine 
+							img.content-img(src='images/lavue/dish1.png', data-1990='opacity: 0; top: 200px', data-2020='opacity: 1; top: 180px')
+							img.prev-button(src='images/lavue/prev-arrow.png', data-1990='opacity: 0; top: 250px; right: 20px', data-2020='opacity: 1; top: 250px')
+							img.next-button(src='images/lavue/next-arrow.png', data-1990='opacity: 0; top: 250px; left: 455px', data-2020='opacity: 1; top: 250px')
+
+			#footer
+				#bg-footer(data-2900='top: 800px; opacity: 0', data-3000='top: 200px; opacity: 1', data-3500='top: -50px;')
+					img.fillwidth(src='images/lavue/la-vue-footer.png', style='top: 100px; position: absolute')
+					.copyright(data-3249='opacity: 0', data-3250='opacity: 1') All rights reserved. &copy; Copyright 2014
+						//- img(src='images/interior-img-1.jpg', style='top: 0; left: 0;')
+						//- img(src='images/interior-img-2.jpg')
+						//- img(src='images/interior-img-3.jpg')
+						//- img(src='images/interior-img-4.jpg')
+						//- img(src='images/interior-img-5.jpg')
+						//- img(src='images/interior-img-6.jpg')
+						//- img(src='images/interior-img-7.jpg')
+
+
+		.loading
+			.icon
+
+		// build:js scripts/vendor.js
+		// bower:js
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+		script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+		script(src='scripts/skrollr.js')
+		script(src='scripts/default.js')
+		script(src='scripts/main.js')
+		script (src='jquery.slides.min.js')
+
+		// endbower
+		// endbuild
+		// build:js({app,.tmp}) scripts/main.js
+		// endbuild

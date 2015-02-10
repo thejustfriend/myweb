@@ -1,0 +1,285 @@
+@import 'conf'
+*
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	// transition: .2s all ease
+
+.loading
+	background: #261a13
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 101
+	display: block
+	.icon
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: url(../images/logo@2x.png) no-repeat center center
+		background-size: 192px 57px
+		-webkit-animation: blink 2s
+		-webkit-animation-iteration-count: infinite
+		-moz-animation: blink 2s
+		-moz-animation-iteration-count: infinite
+		-o-animation: blink 2s
+		-o-animation-iteration-count: infinite
+
+#location
+	position: fixed
+	top: 0
+	right: 0
+	width: 50px
+	padding: 5px
+	background: rgba(255,255,255,.8)
+	z-index: 100
+	text-align: center
+body
+	background: url(../images/body-bg.subtle.jpg) repeat top left fixed
+	height: 3000px
+	#bg-header,
+	#bg-concept,
+	#bg-bar,
+	#bg-signature,
+	#bg-footer
+		position: fixed
+		width: 100%
+		min-height: 200%
+		background-position: 0 0
+		background-size: cover
+	#bg-header
+		background: url(../images/header-bg.png) no-repeat top center
+		z-index: -1
+	#bg-concept
+		z-index: -2
+		background: url(../images/concept-bg.png) no-repeat top center
+	#bg-bar
+		z-index: -3
+		background: url(../images/bar-bg.png) no-repeat top center
+	#bg-signature
+		z-index: -5
+		background: url(../images/signature-bg.png) no-repeat top center
+	#bg-footer
+		z-index: -4
+		background: url(../images/footer-bg.png) no-repeat top center
+
+	#heading,
+	#concept,
+	#bar,
+	#signature,
+	#footer
+		position: absolute
+		width: 100%
+
+	#concept
+		// .viewport
+		// top: 80px
+
+	.wrapper
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		position: fixed
+	.viewport
+		width: 960px
+		margin: 0 auto
+		position: relative
+	#header
+		position: fixed
+		width: 100%
+		top: 0
+		z-index: 100
+		#branding
+			background: url(../images/logo-bg.png) no-repeat
+			width: 621px
+			height: 317px
+			position: absolute
+			right: -20px
+			top: -20px
+			#logo
+				position: absolute
+				bottom: 120px
+				right: 200px
+				transition(.2s)
+				&:hover
+					bottom: 118px
+				img
+					width: 192px
+					height: auto
+		nav[role=navigation]
+			background: url(../images/nav-bg.png) no-repeat top left
+			overflow: hidden
+			position: relative
+			.primary
+				float: left
+				margin-left: 50px
+				z-index: 1
+				position: relative
+			.primary-bg
+				position: fixed
+				top: -25px
+				li
+					position: absolute
+					display: none
+					&.accommodation
+						left: 60px
+					&.dining
+						left: 163px
+					&.spa
+						left: 230px
+					&.facilities
+						left: 308px
+					&.special-offers
+						left: 450px
+					&.contact-us
+						left: 593px
+					
+			a
+				-webkit-font-smoothing: subpixel-antialiased
+				transition(.2s)
+				color: nav-font-color
+				text-transform: uppercase
+				overflow: visible
+				line-height: 16px
+				display: inline-block
+				letter-spacing: 1px
+				padding: 19px 10px
+				margin: 0
+				text-shadow: default-textshadow
+			a:hover, a:active, li.current_page a
+				color: nav-font-hover
+				// background: url(../images/nav-bg-active.png) no-repeat bottom center
+
+			.secondary
+				float: right
+				margin-right: 60px
+				li
+					padding: 0
+					&:not(:last-child)
+						a:after
+							content: '|'
+							padding: 19px 0 19px 10px
+
+				a
+					font-family: font-helve
+					font-size: default-font
+					text-transform: none
+					color: nav-font-hover
+					letter-spacing: 0
+					padding: 19px 10px 19px 0
+					&:hover
+						color: default-color-creme
+					&:after
+						color: nav-font-hover
+	#container
+		position: relative
+		.viewport
+			h1, h2, h3, h4, div, img, p
+				position: absolute
+	#heading
+		position: relative
+		h1.title
+			color: heading-color-A
+			text-shadow: headline-textshadow
+			font: heading-A
+			line-height: heading-x-height-A
+			text-transform: uppercase
+			position: absolute
+			.hl
+				display: block
+				margin-left: 50px
+				color: heading-color-B
+				font: heading-B
+				line-height: heading-x-height-B
+				text-transform: capitalize
+		.hl-spade
+			background: url(../images/hl-spade-bg.png) no-repeat center center
+			position: absolute
+			text-align: center
+			color: white
+			width: 270px
+			height: 54px
+			padding: 110px 30px 165px
+			letter-spacing: 1px
+			text-transform: uppercase
+			font: heading-hl-spade
+			line-height: heading-x-height-hl-spade
+			position: absolute
+			top: 300px
+			right: 0
+			text-shadow: default-textshadow
+	.content-title
+		color: default-color-hilight
+		font: headline-content-title
+		text-shadow: far-shadow
+	.content-tagline
+		color: default-color-active
+		font: headline-content-tagline
+	.content-description
+		color: white
+		font: headline-content-description
+	.content-img
+		width: 620px
+		height: auto
+		left: -80px
+	img.fillwidth
+		width: 100%
+		height: auto
+	.overlay.signature
+		.content-title
+			color: white!important
+			text-shadow: none
+		.content-tagline
+			color: default-color-hilight
+		h3.content-title
+			font: headline-content-tagline
+			font-size: 30px
+			color: default-color-hilight!important
+
+	//Tailor made
+	#concept .navigation
+		position: fixed!important
+		li
+			position: relative
+			&:first-child
+				left: -90px
+			&:last-child
+				left: 110px
+		a
+			-webkit-font-smoothing: subpixel-antialiased
+			color: nav-font-hover
+			text-transform: uppercase
+			font-size: 21px
+			line-height: 90px
+			display: inline-block
+			letter-spacing: 1px
+			text-shadow: default-textshadow
+			padding: 0 80px
+			&:hover, .active
+				background: url(../images/signature-nav-bg.png) no-repeat center center
+				color: nav-font-color
+				transition(.2s)
+
+	.copyright
+		background: #eee
+		bottom: 0
+		position: fixed
+		width: 100%
+		color: #444345
+		padding: 25px
+		text-align: center
+		font: normal 12px font-helve
+
+
+
+
+span.nl
+	display: block
+.boxshadow
+	box-shadow: default-boxshadow
+.skrollable
+	position: absolute

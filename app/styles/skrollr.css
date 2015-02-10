@@ -1,0 +1,12 @@
+.branding {
+  -skrollr-animation-name: branding;
+}
+@-skrollr-keyframes branding {
+  0 {
+    top: 0;
+  }
+
+  2000 {
+    top: -2000px;
+  }
+}

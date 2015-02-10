@@ -1,0 +1,416 @@
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.loading {
+  background: #261a13;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  display: block;
+}
+.loading .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/logo@2x.png") no-repeat center center;
+  background-size: 192px 57px;
+  -webkit-animation: blink 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: blink 2s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: blink 2s;
+  -o-animation-iteration-count: infinite;
+}
+#location {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  padding: 5px;
+  background: rgba(255,255,255,0.8);
+  z-index: 100;
+  text-align: center;
+}
+body {
+  background: url("../images/lavue/la-vue-bg-all.png") repeat top left fixed;
+  height: 3000px;
+}
+body #bg-header,
+body #bg-concept,
+body #bg-bar,
+body #bg-signature,
+body #bg-footer,
+body #bg-bkkview {
+  position: fixed;
+  width: 100%;
+  min-height: 200%;
+  background-position: 0 0;
+  background-size: cover;
+}
+body #bg-header {
+  background: url("../images/lavue/la-vue-top-bg.png") no-repeat top center;
+  z-index: -1;
+}
+body #bg-bkkview {
+  background: url("../images/lavue/city-bg.png") no-repeat top center;
+  z-index: -6;
+}
+body #bg-concept {
+  z-index: -2;
+  background: url("../images/lavue/la-vue-concept-bg.png") no-repeat top center;
+}
+body #bg-bar {
+  z-index: -3;
+  background: url("../images/bar-bg.png") no-repeat top center;
+}
+body #bg-signature {
+  z-index: -5;
+  background: url("../images/lavue/signature-bg.png") no-repeat top center;
+}
+body #bg-footer {
+  z-index: -4;
+  background: url("../images/footer-bg.png") no-repeat top center;
+}
+body #heading,
+body #concept,
+body #bar,
+body #signature,
+body #footer {
+  position: absolute;
+  width: 100%;
+}
+body .wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+body .viewport {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+body #header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+body #header #branding {
+  background: url("../images/lavue/la-vue-logo-bg.png") no-repeat;
+  width: 621px;
+  height: 317px;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+body #header #branding #logo {
+  position: absolute;
+  bottom: 120px;
+  right: 200px;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+}
+body #header #branding #logo:hover {
+  bottom: 118px;
+}
+body #header #branding #logo img {
+  width: 192px;
+  height: auto;
+}
+body #header nav[role=navigation] {
+  background: url("../images/nav-bg.png") no-repeat top left;
+  overflow: hidden;
+  position: relative;
+}
+body #header nav[role=navigation] .primary {
+  float: left;
+  margin-left: 50px;
+  z-index: 1;
+  position: relative;
+}
+body #header nav[role=navigation] .primary-bg {
+  position: fixed;
+  top: -25px;
+}
+body #header nav[role=navigation] .primary-bg li {
+  position: absolute;
+  display: none;
+}
+body #header nav[role=navigation] .primary-bg li.accommodation {
+  left: 60px;
+}
+body #header nav[role=navigation] .primary-bg li.dining {
+  left: 163px;
+}
+body #header nav[role=navigation] .primary-bg li.spa {
+  left: 230px;
+}
+body #header nav[role=navigation] .primary-bg li.facilities {
+  left: 308px;
+}
+body #header nav[role=navigation] .primary-bg li.special-offers {
+  left: 450px;
+}
+body #header nav[role=navigation] .primary-bg li.contact-us {
+  left: 593px;
+}
+body #header nav[role=navigation] a {
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 19px 10px;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+body #header nav[role=navigation] a:hover,
+body #header nav[role=navigation] a:active,
+body #header nav[role=navigation] li.current_page a {
+  color: #f5822b;
+}
+body #header nav[role=navigation] .secondary {
+  float: right;
+  margin-right: 60px;
+}
+body #header nav[role=navigation] .secondary li {
+  padding: 0;
+}
+body #header nav[role=navigation] .secondary li:not(:last-child) a:after {
+  content: '|';
+  padding: 19px 0 19px 10px;
+}
+body #header nav[role=navigation] .secondary a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: none;
+  color: #f5822b;
+  letter-spacing: 0;
+  padding: 19px 10px 19px 0;
+}
+body #header nav[role=navigation] .secondary a:hover {
+  color: #c5beb3;
+}
+body #header nav[role=navigation] .secondary a:after {
+  color: #f5822b;
+}
+body #container {
+  position: relative;
+}
+body #container .viewport h1,
+body #container .viewport h2,
+body #container .viewport h3,
+body #container .viewport h4,
+body #container .viewport div,
+body #container .viewport img,
+body #container .viewport p {
+  position: absolute;
+}
+body #heading {
+  position: relative;
+}
+body #heading h1.title {
+  color: #c5beb3;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  font: 700 60px 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: absolute;
+}
+body #heading h1.title .hl {
+  display: block;
+  margin-left: 50px;
+  color: #f5822b;
+  font: 700 114px 'HelveNeueCond', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  line-height: 104px;
+  text-transform: capitalize;
+}
+body #heading .hl-spade {
+  background: url("../images/hl-spade-bg.png") no-repeat center center;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 270px;
+  height: 54px;
+  padding: 110px 30px 165px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font: 600 21px 'HelveNeueCond', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  line-height: 21px;
+  position: absolute;
+  top: 300px;
+  right: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+body .content-title {
+  color: #f5822b;
+  font: normal 120px JennaSue, 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  text-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+body .content-tagline {
+  color: #af4d37;
+  font: 600 21px 'HelveNeueCond', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+body .content-description {
+  color: #fff;
+  font: 500 21px 'HelveNeueCond', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+body .content-img {
+  width: 411px;
+  height: auto;
+  left: 10px;
+}
+body img.fillwidth {
+  width: 100%;
+  height: auto;
+}
+body .overlay.signature .content-title {
+  color: #fff !important;
+  text-shadow: none;
+}
+body .overlay.signature .content-tagline {
+  color: #f5822b;
+}
+body .overlay.signature h3.content-title {
+  font: 600 21px 'HelveNeueCond', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 30px;
+  color: #f5822b !important;
+}
+body #concept .navigation {
+  position: fixed !important;
+}
+body #concept .navigation li {
+  position: relative;
+}
+body #concept .navigation .gastronomic {
+  left: -90px;
+}
+body #concept .navigation .concept {
+  left: -45px;
+}
+body #concept .navigation .design {
+  left: 0px;
+}
+body #concept .navigation .hours {
+  left: 42px;
+}
+body #concept .navigation a {
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #f5822b;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 90px;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  padding: 0 80px;
+}
+body #concept .navigation a:hover,
+body #concept .navigation a .active {
+  background: url("../images/signature-nav-bg.png") no-repeat center center;
+  color: #fff;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+}
+body .copyright {
+  background: #eee;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: #444345;
+  padding: 25px;
+  text-align: center;
+  font: normal 12px 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+span.nl {
+  display: block;
+}
+.boxshadow {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+.skrollable {
+  position: absolute;
+}
